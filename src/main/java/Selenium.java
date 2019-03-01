@@ -12,13 +12,12 @@ public class Selenium {
 
 
         WebDriver driver = new ChromeDriver();
-        //driver.get("http://www.google.com/xhtml");
-        driver.get("https://www.seleniumhq.org/");
+        driver.get("http://www.google.com/xhtml");
         Thread.sleep(5000);  // Let the user actually see something!
-        //WebElement searchBox = driver.findElement(By.name("q"));
-        //searchBox.sendKeys("Dupa");
-        //searchBox.submit();
-        //Thread.sleep(5000);  // Let the user actually see something!
+        WebElement searchBox = driver.findElement(By.name("q"));
+        searchBox.sendKeys("Dupa");
+        searchBox.submit();
+        Thread.sleep(5000);  // Let the user actually see something!
         driver.quit();
     }
 }
