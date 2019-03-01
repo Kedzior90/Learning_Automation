@@ -1,5 +1,5 @@
 public class Selenium {
     public static void main(String[] args) {
-        System.out.println("Hello, aaaaa");
+        System.out.println("Dzialajace ustawienia");
     }
 }
