@@ -4,17 +4,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Learning_Automation</groupId>
-    <artifactId>Selenium</artifactId>
+    <groupId>com.github.Kedzior90.Learning.Automation</groupId>
+    <artifactId>Learning_Automation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- Selenium -->
+        <!-- TestNG -->
         <dependency>
-            <groupId>io.ddavison</groupId>
-            <artifactId>conductor</artifactId>
-            <version>1.1</version>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.1.1</version>
+            <scope>test</scope>
         </dependency>
 
+        <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.45.0</version>
+        </dependency>
     </dependencies>
 </project>
