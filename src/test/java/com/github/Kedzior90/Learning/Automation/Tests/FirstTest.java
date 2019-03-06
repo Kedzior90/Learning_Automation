@@ -31,10 +31,6 @@ public class FirstTest {
 
     @Test
     public void testAddingItemToCard() {
-        //Select 'Books' from search category dropdown
-        // driver.findElement(By.id("searchDropdownBox"))
-        //        .selectByVisibleText("Books");
-
         //Enter search key: 'Selenium'
         driver.findElement(By.id("twotabsearchtextbox"))
                 .sendKeys("Selenium");
