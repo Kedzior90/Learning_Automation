@@ -1,4 +1,4 @@
-package com.github.Kedzior90.Learning.Automation.Tests;
+package com.github.Kedzior90.Learning.Automation.Tests.tests;
 
 import org.apache.bcel.generic.Select;
 import org.openqa.selenium.By;
@@ -29,6 +29,10 @@ public class FirstTest {
         driver.quit();
     }
 
+    @Test
+    public void openHomePageTest(){
+        driver.get("http://www.amazon.com");
+    }
     @Test
     public void testAddingItemToCard() {
         //Enter search key: 'Selenium'
