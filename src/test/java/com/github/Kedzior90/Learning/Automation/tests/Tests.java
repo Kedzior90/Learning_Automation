@@ -1,5 +1,6 @@
 package com.github.Kedzior90.Learning.Automation.tests;
 
+import com.github.Kedzior90.Learning.Automation.pages.LoginPage;
 import org.apache.bcel.generic.Select;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
