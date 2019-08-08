@@ -43,7 +43,5 @@ public class SeleniumTests {
                 //.selectByVisibleText("Books");
 
         System.out.println("dzialajace ustawienia");
-        ////*[@id="searchDropdownBox"]
-        //#searchDropdownBox
     }
 }
