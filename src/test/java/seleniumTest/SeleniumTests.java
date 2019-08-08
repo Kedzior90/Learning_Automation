@@ -38,9 +38,7 @@ public class SeleniumTests {
 
     @Test
     public void testAddingItemToCard() {
-        //Select 'Books' from search category dropdown
-        //new Select(driver.findElement(By.id("searchDropdownBox")))
-                //.selectByVisibleText("Books");
+
 
         System.out.println("dzialajace ustawienia");
     }
