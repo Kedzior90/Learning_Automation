@@ -4,26 +4,46 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pages.HomePage;
+
+import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 public class SeleniumTests {
 
     private WebDriver driver;
+    private HomePage homePage;
 
     @BeforeClass
-    private void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\RKEDRA\\IdeaProjects\\Learning_Automation\\chromedriver.exe");
+    public void setUp() {
+        String driverPath = new File("chromedriver.exe").getAbsolutePath();
+        System.setProperty("webdriver.chrome.driver", driverPath);
         driver = new ChromeDriver();
+        driver.manage()
+                .timeouts()
+                .implicitlyWait(5, TimeUnit.SECONDS);
+    }
+
+    @BeforeMethod
+    public void openHomePage(){
+        homePage = new HomePage(driver).open();
     }
 
     @AfterClass
-    private void tearDown(){
+    public void tearDown(){
         driver.quit();
     }
 
     @Test
-    public void smokeTest(){
-        driver.get("http://www.amazon.com");
-        System.out.println("Poprawne dzialanie");
+    public void testAddingItemToCard() {
+        //Select 'Books' from search category dropdown
+        //new Select(driver.findElement(By.id("searchDropdownBox")))
+                //.selectByVisibleText("Books");
+
+        System.out.println("dzialajace ustawienia");
+        ////*[@id="searchDropdownBox"]
+        //#searchDropdownBox
     }
 }

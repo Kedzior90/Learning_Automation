@@ -6,7 +6,7 @@ public class HomePage {
     private static final String AMAZON_HOME_PAGE_URL = "http://www.amazon.com";
     private WebDriver driver;
 
-    HomePage(WebDriver driver) {
+    public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
