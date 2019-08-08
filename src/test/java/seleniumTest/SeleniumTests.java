@@ -38,8 +38,6 @@ public class SeleniumTests {
 
     @Test
     public void testAddingItemToCard() {
-
-
         System.out.println("dzialajace ustawienia");
     }
 }
